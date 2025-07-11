@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebulosa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Nebulosa</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="buraco-negro.html">Buraco Negro</a></li>
+                <li><a href="nebulosa.html">Nebulosa</a></li>
+                <li><a href="estrelas.html">Maiores Estrelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>As nebulosas são berçários de estrelas e cemitérios de estrelas antigas. Essas nuvens gigantes de gás e poeira cósmica são as esculturas mais impressionantes do universo, exibindo cores vibrantes e formas complexas.</p>
+
+        <div class="gallery-item">
+            <img src="imagens/nebulosa1.jpg" alt="Nebulosa de Emissão colorida"
+                 data-info="Nuvens de gás (principalmente hidrogênio) que brilham intensamente ao serem ionizadas pela radiação ultravioleta de estrelas jovens e quentes dentro ou perto delas. São os locais ativos de formação de estrelas.">
+            <p class="caption">Nebulosa de Emissão</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="imagens/nebulosa2.jpg" alt="Nebulosa de Reflexão azulada"
+                 data-info="Nuvens de poeira que refletem a luz de estrelas próximas. Elas não emitem luz própria, mas dispersam a luz estelar, geralmente exibindo um brilho azulado devido à forma como a luz azul é mais facilmente espalhada.">
+            <p class="caption">Nebulosa de Reflexão</p>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="imagens/nebulosa3.jpg" alt="Nebulosa Escura, silhueta cósmica"
+                 data-info="Densas nuvens de poeira interestelar que absorvem e bloqueiam a luz visível das estrelas ou nebulosas mais distantes atrás delas, criando silhuetas escuras e intrigantes contra um fundo brilhante.">
+            <p class="caption">Nebulosa Escura</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Explorando o Espaço</p>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption" class="modal-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

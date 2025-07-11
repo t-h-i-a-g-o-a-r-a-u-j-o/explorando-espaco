@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buraco Negro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Buraco Negro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="buraco-negro.html">Buraco Negro</a></li>
+                <li><a href="nebulosa.html">Nebulosa</a></li>
+                <li><a href="estrelas.html">Maiores Estrelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Os buracos negros são os objetos mais misteriosos e fascinantes do universo, com uma gravidade tão intensa que nem mesmo a luz consegue escapar de suas garras. Eles representam o limite final do colapso estelar e cósmico.</p>
+
+        <div class="gallery-item">
+            <img src="imagens/buraco1.jpg" alt="Representação artística de um buraco negro e seu horizonte de eventos"
+                 data-info="Este é o horizonte de eventos: a fronteira sem retorno do buraco negro. Uma vez que algo o cruza, está condenado a cair em direção à singularidade central, um ponto de densidade infinita.">
+            <p class="caption">Horizonte de Eventos</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="imagens/buraco2.jpg" alt="Disco de acreção em torno de um buraco negro supermassivo"
+                 data-info="Discos de acreção são formados por gás e poeira que espiralam em direção ao buraco negro, aquecendo a milhões de graus Celsius e emitindo raios-X e luz intensos antes de serem engolidos.">
+            <p class="caption">Disco de Acreção Brilhante</p>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="imagens/buraco3.jpg" alt="Jatos de matéria emitidos por um buraco negro"
+                 data-info="Alguns buracos negros supermassivos emitem jatos colossais de partículas energéticas que viajam a velocidades próximas à da luz, estendendo-se por milhares de anos-luz no espaço.">
+            <p class="caption">Jatos Relativísticos</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Explorando o Espaço</p>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption" class="modal-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

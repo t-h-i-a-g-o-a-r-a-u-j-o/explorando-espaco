@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maiores Estrelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Maiores Estrelas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="buraco-negro.html">Buraco Negro</a></li>
+                <li><a href="nebulosa.html">Nebulosa</a></li>
+                <li><a href="estrelas.html">Maiores Estrelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>As estrelas são os motores do universo, criando elementos e gerando luz e calor. Entre bilhões delas, algumas se destacam por seu tamanho colossal, desafiando nossa compreensão de quão grandes os objetos cósmicos podem ser.</p>
+
+        <div class="gallery-item">
+            <img src="imagens/estrela1.jpg" alt="UY Scuti, uma hipergigante vermelha colossal"
+                 data-info="UY Scuti é uma das maiores estrelas conhecidas em volume, uma hipergigante vermelha tão vasta que se estendesse até o centro do nosso Sistema Solar, engoliria a órbita de Júpiter.">
+            <p class="caption">UY Scuti</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="imagens/estrela2.jpg" alt="Stephenson 2-18, uma das maiores da Via Láctea"
+                 data-info="Stephenson 2-18 é uma supergigante vermelha notável por seu tamanho imenso e luminosidade, estimada em ser cerca de 2.150 vezes maior que o nosso Sol, tornando-a uma das maiores da Via Láctea.">
+            <p class="caption">Stephenson 2-18</p>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="imagens/estrela3.jpg" alt="Betelgeuse, a gigante vermelha de Orion"
+                 data-info="Betelgeuse é uma supergigante vermelha proeminente na constelação de Orion. Visível a olho nu, é uma das maiores e mais luminosas estrelas, aproximando-se do fim de sua vida e podendo explodir como supernova em breve.">
+            <p class="caption">Betelgeuse</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Explorando o Espaço</p>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption" class="modal-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
