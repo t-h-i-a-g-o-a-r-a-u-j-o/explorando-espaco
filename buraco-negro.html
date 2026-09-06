@@ -1,54 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buraco Negro</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Conheça conceitos e curiosidades sobre buracos negros, horizonte de eventos, discos de acreção e jatos relativísticos."
+  >
+  <title>Buracos Negros | Explorando o Espaço</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Buraco Negro</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="buraco-negro.html">Buraco Negro</a></li>
-                <li><a href="nebulosa.html">Nebulosa</a></li>
-                <li><a href="estrelas.html">Maiores Estrelas</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <p>Os buracos negros são os objetos mais misteriosos e fascinantes do universo, com uma gravidade tão intensa que nem mesmo a luz consegue escapar de suas garras. Eles representam o limite final do colapso estelar e cósmico.</p>
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Explorando o Espaço</h1>
 
-        <div class="gallery-item">
-            <img src="imagens/buraco1.jpg" alt="Representação artística de um buraco negro e seu horizonte de eventos"
-                 data-info="Este é o horizonte de eventos: a fronteira sem retorno do buraco negro. Uma vez que algo o cruza, está condenado a cair em direção à singularidade central, um ponto de densidade infinita.">
-            <p class="caption">Horizonte de Eventos</p>
-        </div>
-
-        <div class="gallery-item">
-            <img src="imagens/buraco2.jpg" alt="Disco de acreção em torno de um buraco negro supermassivo"
-                 data-info="Discos de acreção são formados por gás e poeira que espiralam em direção ao buraco negro, aquecendo a milhões de graus Celsius e emitindo raios-X e luz intensos antes de serem engolidos.">
-            <p class="caption">Disco de Acreção Brilhante</p>
-        </div>
-        
-        <div class="gallery-item">
-            <img src="imagens/buraco3.jpg" alt="Jatos de matéria emitidos por um buraco negro"
-                 data-info="Alguns buracos negros supermassivos emitem jatos colossais de partículas energéticas que viajam a velocidades próximas à da luz, estendendo-se por milhares de anos-luz no espaço.">
-            <p class="caption">Jatos Relativísticos</p>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2025 Explorando o Espaço</p>
-    </footer>
-
-    <div id="imageModal" class="modal">
-        <span class="close-button">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption" class="modal-caption"></div>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a class="ativo" href="buraco-negro.html">Buraco Negro</a></li>
+          <li><a href="nebulosa.html">Nebulosas</a></li>
+          <li><a href="estrelas.html">Maiores Estrelas</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <script src="script.js"></script>
+  <main>
+    <section class="pagina-topo">
+      <span class="etiqueta">Fenômenos extremos do universo</span>
+
+      <h2>Buracos Negros</h2>
+
+      <p>
+        Buracos negros são regiões do espaço onde a gravidade é tão intensa
+        que, após determinado limite, nem mesmo a luz consegue escapar.
+      </p>
+    </section>
+
+    <section class="conteudo-introducao">
+      <h2>Um dos fenômenos mais fascinantes do cosmos</h2>
+
+      <p>
+        Os buracos negros representam alguns dos ambientes mais extremos
+        conhecidos no universo. Eles podem se formar a partir do colapso de
+        estrelas massivas e também existir em escalas gigantescas no centro
+        de galáxias.
+      </p>
+
+      <p>
+        Abaixo estão três elementos associados a esses objetos. Clique nas
+        imagens para ampliar e visualizar mais informações.
+      </p>
+    </section>
+
+    <section class="galeria-section">
+      <div class="gallery-grid">
+        <article class="gallery-item">
+          <img
+            src="imagens/buraco1.jpg"
+            alt="Representação artística de um buraco negro e seu horizonte de eventos"
+            data-info="O horizonte de eventos representa a região limite ao redor de um buraco negro. Depois que algo ultrapassa esse limite, não consegue retornar ao espaço externo."
+          >
+
+          <div class="gallery-texto">
+            <h3>Horizonte de Eventos</h3>
+
+            <p>
+              A fronteira que marca o ponto a partir do qual nada consegue
+              escapar da atração gravitacional do buraco negro.
+            </p>
+          </div>
+        </article>
+
+        <article class="gallery-item">
+          <img
+            src="imagens/buraco2.jpg"
+            alt="Disco de acreção em torno de um buraco negro"
+            data-info="O disco de acreção é formado por matéria que gira ao redor do buraco negro. O atrito e as altas velocidades podem aquecer esse material intensamente antes de sua queda."
+          >
+
+          <div class="gallery-texto">
+            <h3>Disco de Acreção</h3>
+
+            <p>
+              Gás, poeira e outros materiais podem formar estruturas
+              brilhantes enquanto orbitam o buraco negro.
+            </p>
+          </div>
+        </article>
+
+        <article class="gallery-item">
+          <img
+            src="imagens/buraco3.jpg"
+            alt="Representação de jatos de partículas próximos a um buraco negro"
+            data-info="Alguns sistemas associados a buracos negros podem produzir jatos extremamente energéticos, lançando partículas para grandes distâncias no espaço."
+          >
+
+          <div class="gallery-texto">
+            <h3>Jatos Relativísticos</h3>
+
+            <p>
+              Fluxos extremamente energéticos de partículas podem ser
+              observados em alguns sistemas associados a buracos negros.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="curiosidade">
+      <h2>Curiosidade</h2>
+
+      <p>
+        Apesar do nome, um buraco negro pode estar cercado por regiões muito
+        brilhantes. A matéria ao redor pode liberar grandes quantidades de
+        energia antes de atravessar o horizonte de eventos.
+      </p>
+    </section>
+
+    <section class="navegacao-paginas">
+      <a href="index.html">← Voltar ao início</a>
+      <a href="nebulosa.html">Próximo: Nebulosas →</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2026 Explorando o Espaço · Desenvolvido por Thiago Araujo
+    </p>
+  </footer>
+
+  <div
+    id="imageModal"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-label="Visualização ampliada da imagem"
+  >
+    <button
+      class="close-button"
+      type="button"
+      aria-label="Fechar imagem ampliada"
+    >
+      ×
+    </button>
+
+    <img
+      class="modal-content"
+      id="img01"
+      alt=""
+    >
+
+    <div
+      id="caption"
+      class="modal-caption"
+    ></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
