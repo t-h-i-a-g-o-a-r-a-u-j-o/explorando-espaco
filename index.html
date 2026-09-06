@@ -1,39 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explorando o Espaço</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Projeto educacional sobre astronomia com páginas interativas sobre buracos negros, nebulosas e grandes estrelas."
+  >
+  <title>Explorando o Espaço</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Bem-vindo ao Explorando o Espaço</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="buraco-negro.html">Buraco Negro</a></li>
-                <li><a href="nebulosa.html">Nebulosa</a></li>
-                <li><a href="estrelas.html">Maiores Estrelas</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <img src="imagens/capa.jpg" alt="Imagem de capa do Explorando o Espaço"
-             style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 0 20px rgba(160, 160, 255, 0.5);">
-        <p>Prepare-se para uma jornada cósmica inesquecível! Nosso site "Explorando o Espaço" é seu portal para as maiores maravilhas do universo. Navegue pelas páginas para desvendar os mistérios dos buracos negros, mergulhar na beleza das nebulosas coloridas e descobrir as gigantes estelares que desafiam nossa imaginação.</p>
-        <p>A cada clique, uma nova descoberta. Clique nas imagens para expandi-las e revelar detalhes fascinantes sobre o que está além do nosso planeta. Abrace a curiosidade e embarque nesta aventura astronômica!</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Explorando o Espaço</p>
-    </footer>
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Explorando o Espaço</h1>
 
-    <div id="imageModal" class="modal">
-        <span class="close-button">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption" class="modal-caption"></div>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a class="ativo" href="index.html">Início</a></li>
+          <li><a href="buraco-negro.html">Buraco Negro</a></li>
+          <li><a href="nebulosa.html">Nebulosas</a></li>
+          <li><a href="estrelas.html">Maiores Estrelas</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <script src="script.js"></script>
+  <main>
+    <section class="hero">
+      <div class="hero-texto">
+        <span class="etiqueta">Projeto interativo sobre astronomia</span>
+
+        <h2>Descubra algumas das maravilhas do universo</h2>
+
+        <p>
+          Explore fenômenos cósmicos fascinantes, conheça algumas das maiores
+          estrelas já observadas e descubra estruturas que ajudam a contar a
+          história do universo.
+        </p>
+
+        <a class="botao-principal" href="#explorar">
+          Começar exploração
+        </a>
+      </div>
+
+      <div class="hero-imagem">
+        <img
+          src="imagens/capa.jpg"
+          alt="Imagem ilustrativa do espaço profundo"
+        >
+      </div>
+    </section>
+
+    <section class="introducao">
+      <h2>Uma jornada pelo cosmos</h2>
+
+      <p>
+        Este projeto reúne páginas temáticas sobre astronomia utilizando
+        HTML, CSS e JavaScript. Cada seção apresenta imagens, informações e
+        recursos interativos para tornar a navegação mais interessante.
+      </p>
+    </section>
+
+    <section id="explorar" class="cards-section">
+      <h2>O que você deseja explorar?</h2>
+
+      <div class="cards-grid">
+        <article class="card">
+          <img
+            src="imagens/buraco1.jpg"
+            alt="Representação de um buraco negro"
+          >
+
+          <div class="card-conteudo">
+            <h3>Buracos Negros</h3>
+
+            <p>
+              Conheça o horizonte de eventos, discos de acreção e os
+              impressionantes jatos relativísticos.
+            </p>
+
+            <a href="buraco-negro.html">
+              Explorar →
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="imagens/nebulosa1.jpg"
+            alt="Nebulosa colorida no espaço"
+          >
+
+          <div class="card-conteudo">
+            <h3>Nebulosas</h3>
+
+            <p>
+              Descubra nuvens cósmicas de gás e poeira que participam da
+              formação e evolução das estrelas.
+            </p>
+
+            <a href="nebulosa.html">
+              Explorar →
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img
+            src="imagens/estrela1.jpg"
+            alt="Representação de uma estrela gigante"
+          >
+
+          <div class="card-conteudo">
+            <h3>Maiores Estrelas</h3>
+
+            <p>
+              Veja alguns dos maiores objetos estelares conhecidos e compare
+              suas dimensões impressionantes.
+            </p>
+
+            <a href="estrelas.html">
+              Explorar →
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="sobre-projeto">
+      <h2>Sobre o projeto</h2>
+
+      <p>
+        O Explorando o Espaço foi desenvolvido como projeto de prática em
+        desenvolvimento web, trabalhando estrutura semântica, responsividade,
+        navegação entre páginas, manipulação do DOM e interação com imagens.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2026 Explorando o Espaço · Desenvolvido por Thiago Araujo
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
