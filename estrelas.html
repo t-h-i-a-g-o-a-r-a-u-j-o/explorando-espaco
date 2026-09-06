@@ -1,54 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maiores Estrelas</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Conheça algumas das maiores estrelas conhecidas e descubra mais sobre gigantes e supergigantes vermelhas."
+  >
+  <title>Maiores Estrelas | Explorando o Espaço</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Maiores Estrelas</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="buraco-negro.html">Buraco Negro</a></li>
-                <li><a href="nebulosa.html">Nebulosa</a></li>
-                <li><a href="estrelas.html">Maiores Estrelas</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <p>As estrelas são os motores do universo, criando elementos e gerando luz e calor. Entre bilhões delas, algumas se destacam por seu tamanho colossal, desafiando nossa compreensão de quão grandes os objetos cósmicos podem ser.</p>
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Explorando o Espaço</h1>
 
-        <div class="gallery-item">
-            <img src="imagens/estrela1.jpg" alt="UY Scuti, uma hipergigante vermelha colossal"
-                 data-info="UY Scuti é uma das maiores estrelas conhecidas em volume, uma hipergigante vermelha tão vasta que se estendesse até o centro do nosso Sistema Solar, engoliria a órbita de Júpiter.">
-            <p class="caption">UY Scuti</p>
-        </div>
-
-        <div class="gallery-item">
-            <img src="imagens/estrela2.jpg" alt="Stephenson 2-18, uma das maiores da Via Láctea"
-                 data-info="Stephenson 2-18 é uma supergigante vermelha notável por seu tamanho imenso e luminosidade, estimada em ser cerca de 2.150 vezes maior que o nosso Sol, tornando-a uma das maiores da Via Láctea.">
-            <p class="caption">Stephenson 2-18</p>
-        </div>
-        
-        <div class="gallery-item">
-            <img src="imagens/estrela3.jpg" alt="Betelgeuse, a gigante vermelha de Orion"
-                 data-info="Betelgeuse é uma supergigante vermelha proeminente na constelação de Orion. Visível a olho nu, é uma das maiores e mais luminosas estrelas, aproximando-se do fim de sua vida e podendo explodir como supernova em breve.">
-            <p class="caption">Betelgeuse</p>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2025 Explorando o Espaço</p>
-    </footer>
-
-    <div id="imageModal" class="modal">
-        <span class="close-button">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption" class="modal-caption"></div>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="buraco-negro.html">Buraco Negro</a></li>
+          <li><a href="nebulosa.html">Nebulosas</a></li>
+          <li><a class="ativo" href="estrelas.html">Maiores Estrelas</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <script src="script.js"></script>
+  <main>
+    <section class="pagina-topo">
+      <span class="etiqueta">Gigantes do universo</span>
+
+      <h2>Maiores Estrelas</h2>
+
+      <p>
+        Algumas estrelas alcançam dimensões tão impressionantes que fazem o
+        nosso Sol parecer pequeno em comparação. Essas gigantes ajudam a
+        entender melhor a evolução e os limites físicos das estrelas.
+      </p>
+    </section>
+
+    <section class="conteudo-introducao">
+      <h2>Estrelas em escala colossal</h2>
+
+      <p>
+        As estrelas podem apresentar enormes diferenças de massa, temperatura,
+        luminosidade e tamanho. Entre elas estão gigantes e supergigantes que
+        ocupam volumes extremamente maiores do que o Sol.
+      </p>
+
+      <p>
+        Clique nas imagens abaixo para ampliar e visualizar informações sobre
+        alguns exemplos apresentados neste projeto.
+      </p>
+    </section>
+
+    <section class="galeria-section">
+      <div class="gallery-grid">
+        <article class="gallery-item">
+          <img
+            src="imagens/estrela1.jpg"
+            alt="Representação da estrela UY Scuti"
+            data-info="UY Scuti é uma estrela supergigante vermelha conhecida por suas enormes dimensões. Ela costuma aparecer em comparações entre algumas das maiores estrelas observadas."
+          >
+
+          <div class="gallery-texto">
+            <h3>UY Scuti</h3>
+
+            <p>
+              Uma supergigante vermelha conhecida por seu enorme volume e
+              frequentemente citada entre as maiores estrelas observadas.
+            </p>
+          </div>
+        </article>
+
+        <article class="gallery-item">
+          <img
+            src="imagens/estrela2.jpg"
+            alt="Representação da estrela Stephenson 2-18"
+            data-info="Stephenson 2-18 é uma estrela supergigante vermelha associada ao aglomerado Stephenson 2 e conhecida por suas dimensões extremamente grandes."
+          >
+
+          <div class="gallery-texto">
+            <h3>Stephenson 2-18</h3>
+
+            <p>
+              Uma supergigante vermelha de dimensões extraordinárias,
+              associada ao aglomerado estelar Stephenson 2.
+            </p>
+          </div>
+        </article>
+
+        <article class="gallery-item">
+          <img
+            src="imagens/estrela3.jpg"
+            alt="Representação da estrela Betelgeuse"
+            data-info="Betelgeuse é uma supergigante vermelha localizada na constelação de Orion. É uma estrela muito estudada e pode ser observada a olho nu no céu noturno."
+          >
+
+          <div class="gallery-texto">
+            <h3>Betelgeuse</h3>
+
+            <p>
+              Uma conhecida supergigante vermelha da constelação de Orion,
+              facilmente reconhecida e amplamente estudada pela astronomia.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="curiosidade">
+      <h2>Curiosidade</h2>
+
+      <p>
+        Estrelas muito massivas consomem seu combustível mais rapidamente.
+        Apesar de possuírem muito mais matéria, elas podem ter uma vida
+        consideravelmente mais curta do que estrelas menores.
+      </p>
+    </section>
+
+    <section class="navegacao-paginas">
+      <a href="nebulosa.html">← Anterior: Nebulosas</a>
+      <a href="index.html">Voltar ao início →</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2026 Explorando o Espaço · Desenvolvido por Thiago Araujo
+    </p>
+  </footer>
+
+  <div
+    id="imageModal"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-label="Visualização ampliada da imagem"
+  >
+    <button
+      class="close-button"
+      type="button"
+      aria-label="Fechar imagem ampliada"
+    >
+      ×
+    </button>
+
+    <img
+      class="modal-content"
+      id="img01"
+      alt=""
+    >
+
+    <div
+      id="caption"
+      class="modal-caption"
+    ></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
