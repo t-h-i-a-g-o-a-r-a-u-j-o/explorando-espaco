@@ -1,73 +1,94 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let modal = document.getElementById("imageModal");
-    let modalImg = document.getElementById("img01");
-    let captionText = document.getElementById("caption");
-    let closeButton = document.getElementsByClassName("close-button")[0];
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('img01');
+  const captionText = document.getElementById('caption');
+  const closeButton = document.querySelector('.close-button');
 
-    // Pega todas as imagens da galeria em todas as páginas
-    let galleryImages = document.querySelectorAll("main .gallery-item img");
+  const galleryImages = document.querySelectorAll(
+    '.gallery-item img[data-info]'
+  );
 
-    galleryImages.forEach(function(img) {
-        img.onclick = function(){
-            modal.classList.add('active'); // Adiciona classe 'active' para animar o modal via CSS
-            modalImg.src = this.src;
-            captionText.innerHTML = this.getAttribute('data-info');
-        }
-    });
+  // A página inicial não possui modal.
+  // Se ele não existir, o script simplesmente encerra.
+  if (!modal || !modalImg || !captionText) {
+    return;
+  }
+
+  let imagemAnterior = null;
+
+  function abrirModal(imagem) {
+    imagemAnterior = imagem;
+
+    modalImg.src = imagem.src;
+    modalImg.alt = imagem.alt;
+
+    captionText.textContent =
+      imagem.dataset.info || imagem.alt;
+
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+
+    document.body.style.overflow = 'hidden';
 
     if (closeButton) {
-        closeButton.onclick = function() { 
-            modal.classList.remove('active'); // Remove a classe 'active' para fechar
-        }
+      closeButton.focus();
     }
+  }
 
-    modal.onclick = function(event) {
-        if (event.target == modal) { 
-            modal.classList.remove('active'); // Remove a classe 'active' para fechar
-        }
+  function fecharModal() {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+
+    modalImg.src = '';
+    modalImg.alt = '';
+
+    captionText.textContent = '';
+
+    document.body.style.overflow = '';
+
+    if (imagemAnterior) {
+      imagemAnterior.focus();
     }
-});document.addEventListener('DOMContentLoaded', function() {
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("img01");
-    const captionText = document.getElementById("caption");
-    const closeButton = document.querySelector(".close-button"); // Usando querySelector para mais consistência
-    const galleryImages = document.querySelectorAll("main .gallery-item img");
+  }
 
-    // Função para abrir o modal
-    function openModal(imgElement) {
-        modal.classList.add('active');
-        modalImg.src = imgElement.src;
-        captionText.innerHTML = imgElement.getAttribute('data-info');
-    }
+  galleryImages.forEach((imagem) => {
+    imagem.setAttribute('tabindex', '0');
+    imagem.setAttribute('role', 'button');
 
-    // Função para fechar o modal
-    function closeModal() {
-        modal.classList.remove('active');
-    }
-
-    // Adiciona o evento de clique a cada imagem da galeria
-    galleryImages.forEach(img => {
-        img.addEventListener('click', function() {
-            openModal(this);
-        });
+    imagem.addEventListener('click', () => {
+      abrirModal(imagem);
     });
 
-    // Adiciona eventos para fechar o modal
-    if (closeButton) {
-        closeButton.addEventListener('click', closeModal);
+    imagem.addEventListener('keydown', (event) => {
+      if (
+        event.key === 'Enter' ||
+        event.key === ' '
+      ) {
+        event.preventDefault();
+        abrirModal(imagem);
+      }
+    });
+  });
+
+  if (closeButton) {
+    closeButton.addEventListener(
+      'click',
+      fecharModal
+    );
+  }
+
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      fecharModal();
     }
+  });
 
-    modal.addEventListener('click', function(event) {
-        // Fecha se o clique for no fundo escuro (no próprio modal)
-        if (event.target === modal) {
-            closeModal();
-        }
-    });
-
-    // MELHORIA: Adiciona evento para fechar com a tecla "Escape"
-    document.addEventListener('keydown', function(event) {
-        if (event.key === "Escape" && modal.classList.contains('active')) {
-            closeModal();
-        }
-    });
+  document.addEventListener('keydown', (event) => {
+    if (
+      event.key === 'Escape' &&
+      modal.classList.contains('active')
+    ) {
+      fecharModal();
+    }
+  });
 });
