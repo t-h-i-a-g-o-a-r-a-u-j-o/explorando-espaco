@@ -1,54 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nebulosa</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Explore nebulosas, grandes nuvens de gás e poeira presentes no espaço e relacionadas à formação e evolução das estrelas."
+  >
+  <title>Nebulosas | Explorando o Espaço</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Nebulosa</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="buraco-negro.html">Buraco Negro</a></li>
-                <li><a href="nebulosa.html">Nebulosa</a></li>
-                <li><a href="estrelas.html">Maiores Estrelas</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <p>As nebulosas são berçários de estrelas e cemitérios de estrelas antigas. Essas nuvens gigantes de gás e poeira cósmica são as esculturas mais impressionantes do universo, exibindo cores vibrantes e formas complexas.</p>
+  <header class="site-header">
+    <div class="header-content">
+      <h1>Explorando o Espaço</h1>
 
-        <div class="gallery-item">
-            <img src="imagens/nebulosa1.jpg" alt="Nebulosa de Emissão colorida"
-                 data-info="Nuvens de gás (principalmente hidrogênio) que brilham intensamente ao serem ionizadas pela radiação ultravioleta de estrelas jovens e quentes dentro ou perto delas. São os locais ativos de formação de estrelas.">
-            <p class="caption">Nebulosa de Emissão</p>
-        </div>
-
-        <div class="gallery-item">
-            <img src="imagens/nebulosa2.jpg" alt="Nebulosa de Reflexão azulada"
-                 data-info="Nuvens de poeira que refletem a luz de estrelas próximas. Elas não emitem luz própria, mas dispersam a luz estelar, geralmente exibindo um brilho azulado devido à forma como a luz azul é mais facilmente espalhada.">
-            <p class="caption">Nebulosa de Reflexão</p>
-        </div>
-        
-        <div class="gallery-item">
-            <img src="imagens/nebulosa3.jpg" alt="Nebulosa Escura, silhueta cósmica"
-                 data-info="Densas nuvens de poeira interestelar que absorvem e bloqueiam a luz visível das estrelas ou nebulosas mais distantes atrás delas, criando silhuetas escuras e intrigantes contra um fundo brilhante.">
-            <p class="caption">Nebulosa Escura</p>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2025 Explorando o Espaço</p>
-    </footer>
-
-    <div id="imageModal" class="modal">
-        <span class="close-button">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption" class="modal-caption"></div>
+      <nav aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="buraco-negro.html">Buraco Negro</a></li>
+          <li><a class="ativo" href="nebulosa.html">Nebulosas</a></li>
+          <li><a href="estrelas.html">Maiores Estrelas</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <script src="script.js"></script>
+  <main>
+    <section class="pagina-topo">
+      <span class="etiqueta">Nuvens cósmicas de gás e poeira</span>
+
+      <h2>Nebulosas</h2>
+
+      <p>
+        Nebulosas são enormes estruturas encontradas no espaço, formadas
+        principalmente por gás e poeira. Algumas estão relacionadas ao
+        nascimento de estrelas, enquanto outras são resultado das etapas
+        finais da evolução estelar.
+      </p>
+    </section>
+
+    <section class="conteudo-introducao">
+      <h2>Berçários e remanescentes estelares</h2>
+
+      <p>
+        Essas estruturas podem apresentar diferentes formas, tamanhos e
+        características. A interação entre gás, poeira, radiação e estrelas
+        próximas produz algumas das paisagens mais impressionantes observadas
+        no universo.
+      </p>
+
+      <p>
+        Explore as imagens abaixo e clique em cada uma delas para visualizar
+        mais informações.
+      </p>
+    </section>
+
+    <section class="galeria-section">
+      <div class="gallery-grid">
+        <article class="gallery-item">
+          <img
+            src="imagens/nebulosa1.jpg"
+            alt="Imagem ilustrativa de uma nebulosa de emissão"
+            data-info="Nebulosas de emissão são nuvens de gás ionizado que podem emitir sua própria luz devido à energia recebida de estrelas próximas."
+          >
+
+          <div class="gallery-texto">
+            <h3>Nebulosas de Emissão</h3>
+
+            <p>
+              Regiões de gás ionizado que podem brilhar intensamente devido
+              à radiação produzida por estrelas próximas.
+            </p>
+          </div>
+        </article>
+
+        <article class="gallery-item">
+          <img
+            src="imagens/nebulosa2.jpg"
+            alt="Imagem ilustrativa de uma nebulosa planetária"
+            data-info="Nebulosas planetárias podem surgir quando determinadas estrelas chegam às fases finais de sua evolução e liberam suas camadas externas no espaço."
+          >
+
+          <div class="gallery-texto">
+            <h3>Nebulosas Planetárias</h3>
+
+            <p>
+              Estruturas formadas a partir de material liberado por estrelas
+              durante determinadas fases finais de sua evolução.
+            </p>
+          </div>
+        </article>
+
+        <article class="gallery-item">
+          <img
+            src="imagens/nebulosa3.jpg"
+            alt="Imagem ilustrativa de uma nebulosa de reflexão"
+            data-info="Nebulosas de reflexão tornam-se visíveis ao refletirem a luz produzida por estrelas próximas, em vez de emitirem grande quantidade de luz própria."
+          >
+
+          <div class="gallery-texto">
+            <h3>Nebulosas de Reflexão</h3>
+
+            <p>
+              Nuvens de poeira que se tornam visíveis principalmente por
+              refletirem a luz de estrelas próximas.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="curiosidade">
+      <h2>Curiosidade</h2>
+
+      <p>
+        Algumas nebulosas funcionam como verdadeiros berçários estelares.
+        Em determinadas regiões, concentrações de matéria podem dar origem
+        a novas estrelas e, eventualmente, a sistemas planetários.
+      </p>
+    </section>
+
+    <section class="navegacao-paginas">
+      <a href="buraco-negro.html">← Anterior: Buracos Negros</a>
+      <a href="estrelas.html">Próximo: Maiores Estrelas →</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      © 2026 Explorando o Espaço · Desenvolvido por Thiago Araujo
+    </p>
+  </footer>
+
+  <div
+    id="imageModal"
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-label="Visualização ampliada da imagem"
+  >
+    <button
+      class="close-button"
+      type="button"
+      aria-label="Fechar imagem ampliada"
+    >
+      ×
+    </button>
+
+    <img
+      class="modal-content"
+      id="img01"
+      alt=""
+    >
+
+    <div
+      id="caption"
+      class="modal-caption"
+    ></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
